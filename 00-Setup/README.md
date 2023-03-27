@@ -90,13 +90,12 @@ k8s-master      Ready    master   8m45s   v1.18.0
 k8s-worker-01   Ready    <none>   2m1s    v1.18.0
 k8s-worker-02   Ready    <none>   24s     v1.18.0
 
-root@k8s-master:~# kubectl get nodes -o wide 
-NAME            STATUS   ROLES    AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION    CONTAINER-RUNTIME
-k8s-master      Ready    master   13m     v1.18.0   10.128.0.7    <none>        Ubuntu 16.04.7 LTS   4.15.0-1088-gcp   docker://20.10.0
-k8s-worker-01   Ready    <none>   6m24s   v1.18.0   10.128.0.8    <none>        Ubuntu 16.04.7 LTS   4.15.0-1088-gcp   docker://20.10.0
-k8s-worker-02   Ready    <none>   4m47s   v1.18.0   10.128.0.9    <none>        Ubuntu 16.04.7 LTS   4.15.0-1088-gcp   docker://20.10.0
-root@k8s-master:~# 
-
+root@master:~ # kubectl  get node -o wide
+NAME      STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+master    Ready    control-plane   16m   v1.26.3   10.1.0.4      <none>        Ubuntu 20.04.6 LTS   5.15.0-1034-azure   cri-o://1.23.5
+worker1   Ready    <none>          11m   v1.26.3   10.1.0.5      <none>        Ubuntu 20.04.6 LTS   5.15.0-1034-azure   cri-o://1.23.5
+worker2   Ready    <none>          11m   v1.26.3   10.1.0.6      <none>        Ubuntu 20.04.6 LTS   5.15.0-1034-azure   cri-o://1.23.5
+root@master:~ #
 ```
 
 
