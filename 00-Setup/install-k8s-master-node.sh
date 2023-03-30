@@ -100,7 +100,7 @@ echo "******************* Deploying kubernetes ***********************"
 
 # Fix Me - Update the "apiserver-advertise-address" with your master node ip.
 
-kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address="10.1.0.4" 
+kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address="10.0.1.5" 
 export KUBECONFIG=/etc/kubernetes/admin.conf
 
 
