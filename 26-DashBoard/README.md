@@ -10,8 +10,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/a
 ### Create a DashBoard Admin Service Account & Grant him ClusterAdminRole
 
 ```
-kubectl  apply -f dash-admin-sa.yaml
-kubectl  apply -f dash-admin-sa-binding.yaml
+kubectl  apply -f dash-admin-sa-and-binding.yaml
 ```
 
 ### Expose the Dashboard Service to NodePort
